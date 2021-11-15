@@ -1,3 +1,5 @@
+/* Esercizio 1 */
+
 .ex-1-square{
     transition: 2s;
 }
@@ -5,6 +7,8 @@
 .ex-1-square:hover{
     background-color: red;
 }
+
+/* Esercizio 2 */
 
 .ex-2-square{
     transition: 2s;
@@ -14,6 +18,8 @@
     width: 100%;
 }
 
+/* Esercizio 3 */
+
 .ex-3-square{
     transition: 2s;
 }
@@ -21,3 +27,137 @@
 .ex-3-square:hover{
     border-radius: 100%;
 }
+
+/* Esercizio 4 */
+
+.ex-4-square{
+    transition: 1s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/* Esercizio 5 */
+
+.ex-5-square{
+    transition: 1s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(.5);
+}
+
+/* Esercizio 6 */
+
+.ex-6-img{
+    transition: 1s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* Esercizio 7 */
+
+.ex-7-img{
+    transition: 2s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(.6) sepia(.5);
+}
+
+/* Esercizio 8 */
+
+.ex-8-img{
+    transition: 2s;
+}
+
+.ex-8-img:hover{
+    filter: saturate(0.2) hue-rotate(90deg);
+    border-radius: 20px;
+}
+
+/* Esercizio 9 */
+
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(0.8) hue-rotate(90deg);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+
+.ex-10-icon{
+    animation: ruota 1s linear infinite;
+}
+
+@keyframes ruota{
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover{
+    animation: ruota2 2s linear ;
+}
+
+@keyframes ruota2{
+    0%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: spazio-bianco-top 2s linear;
+}
+
+@keyframes spazio-bianco-top{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: spazio-bianco-bottom 2s linear;
+}
+
+@keyframes spazio-bianco-bottom{
+    0%{
+        right: 10%;
+    }
+    50%{
+        right: 60%;
+    }
+    100%{
+        right: 10%;
+    }
+}
+
+/* Esercizio 13 */
+
